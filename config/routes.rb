@@ -4,4 +4,6 @@ Facespace::Application.routes.draw do
   resources :users, only: [:index]
   root "static#index"
   get '/welcome' => 'static#welcome'
+  get '/anniversary' => 'static#anniversary'
+  
 end
