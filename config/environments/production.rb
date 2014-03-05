@@ -87,6 +87,8 @@ Facespace::Application.configure do
     authentication: :plain
   }
   config.action_mailer.delivery_method = :smtp
+  config.action_controller.asset_host = 'http://intense-springs-4814.herokuapp.com'
+  config.action_mailer.asset_host = 'http://intense-springs-4814.herokuapp.com'
 
 
 
