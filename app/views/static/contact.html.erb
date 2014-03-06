@@ -1,9 +1,9 @@
 <h1 class="page-header">Contact Us</h1>
 
-<%= form_tag(contact_path) do %>
-  <%= text_field_tag(:name, '', placeholder: 'Name') %><br>
-  <%= text_field_tag(:email, '', placeholder: 'Email') %><br>
-  <%= text_area_tag(:question, '', placeholder: 'Question') %><br>
-  <%= submit_tag('Say Hi!', class: 'btn btn-success') %>
+<%= form_for(@contact, url: contact_path) do |f| %>
+  <%= f.text_field(:name, placeholder: 'Name') %><br>
+  <%= f.text_field(:email, placeholder: 'Email') %><br>
+  <%= f.text_area(:question, placeholder: 'Question') %><br>
+  <%= f.submit('Say Hi!', class: 'btn btn-success') %>
 
 <% end %>
